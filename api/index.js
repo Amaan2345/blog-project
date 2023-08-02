@@ -6,10 +6,7 @@ import userRoutes from './routes/users.js'
 import authRoutes from './routes/auth.js'
 import cors from 'cors';
 import multer from 'multer';
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-require("dotenv").config();
-const port = process.env.PORT || 3306;
+const port = process.env.PORT || 8080;
 
 
 const app=express();
